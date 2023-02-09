@@ -1,5 +1,6 @@
 .feed {
   flex: 5.5;
   height: calc(100vh - 60px);
+  margin: 25px;
   
 }
