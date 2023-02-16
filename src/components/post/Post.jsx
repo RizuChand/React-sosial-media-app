@@ -4,11 +4,11 @@ import {MoreVert} from '@mui/icons-material'
 import { users } from "../../dummyData";
 
 export default function Post ({post}) {
-    // const user = users.filter((e)=> e.id < 6)
-    // console.log(user[0].username);
+    // const [like, setLike] = useState(post.likes);
     return (
         <div className="post">
             <div className="postWrapper">
+                
                 <div className="postTop">
                     <div className="postTopLeft">
                         <img className="postProfile" src={users.filter((e) => e.id === post.userId)[0].profilePicture} alt="" />
@@ -26,7 +26,7 @@ export default function Post ({post}) {
                     </div>
                 </div>
                 <div className="postCenter">
-                    <span className="postText">{post.desc}</span>
+                    <span className="postText">{post?.desc}</span>
                     <img className="postImg" src={post.photo} alt="" />
                 </div>
                 <div className="postBottom">

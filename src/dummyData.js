@@ -39,7 +39,7 @@ export const Posts = [
     },
     {
         id : 2,
-        desc : 'pergi itu ke masa depan bukan masa lau',
+        
         photo : 'assets/post/2.jpeg',
         dates : '45 mins ago',
         userId :2,
