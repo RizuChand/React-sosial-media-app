@@ -8,7 +8,7 @@ export default function Post({ post }) {
   const [isLiked, setLiked] = useState(false);
 
   const likeHandler = () => {
-    setLikes(isLiked ? likes + 1 : likes - 1);
+    setLikes(isLiked ? likes - 1 : likes + 1);
     setLiked(!isLiked);
   };
   return (
